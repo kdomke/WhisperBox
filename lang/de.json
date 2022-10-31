@@ -2,9 +2,9 @@
     "WhisperBox": {
         "whisperHistory": "Verlauf:",
         "whisperMessage": "Nachricht:",
-        "whisperToPre":   "Flüstern mit",
+        "whisperToPre":   "Flüstern mit ",
         "whisperToPost":  "",
         "to":             "An:",
-        "open":           "Öffne Flüstern"
+        "OpenBox":           "Öffne Flüstern"
     }
 }

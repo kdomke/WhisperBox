@@ -27,7 +27,7 @@ class WhisperBox extends Application {
             padding: '0'
         });
 
-        historyContainer.append("<h2>{{localize 'WhisperBox.whisperHistory}}</h2>");
+        historyContainer.append("<h2>" + game.i18n.localize('WhisperBox.whisperHistory') + "</h2>");
         historyContainer.append(whisperHistory);
 
         let messageContainer = $('<div></div>');
@@ -46,7 +46,7 @@ class WhisperBox extends Application {
             "font-family": "Arial",
         });
 
-        messageContainer.append("<h2>{{localize 'WhisperBox.whisperMessage'}}</h2>");
+        messageContainer.append("<h2>" + game.i18n.localize('WhisperBox.whisperMessage') + "</h2>");
         messageContainer.append(whisperMessage);
 
         let appBody = $('<div></div>');
@@ -143,7 +143,7 @@ class WhisperBox extends Application {
     <header class="message-header flexrow">
         <h4 class="message-sender">${speaker}</h4>
         <span class="message-metadata">
-            <span class="whisper-to">{{localize "WhisperBox.to"}} ${whisperedTo}</span>
+            <span class="whisper-to">`) + game.i18n.localize('WhisperBox.to') + $(`${whisperedTo}</span>
         </span>
     </header>
     <div class="message-content">

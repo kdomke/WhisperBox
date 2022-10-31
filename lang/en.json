@@ -2,9 +2,9 @@
     "WhisperBox": {
         "whisperHistory": "History:",
         "whisperMessage": "Message:",
-        "whisperToPre":   "Whispering to",
+        "whisperToPre":   "Whispering to ",
         "whisperToPost":  "",
         "to":             "To:",
-        "open":           "Open whisper box"
+        "OpenBox":           "Open whisper box"
     }
 }
