@@ -20,10 +20,10 @@ jobs:
           version: ${{github.event.release.tag_name}}
           url: https://github.com/${{github.repository}}
           manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
-          download: https://github.com/${{github.repository}}/releases/latest/download/module.zip
+          download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/package.zip
 
       # Create a zip file with all files required by the module to add to the release
-      - run: zip -r ./module.zip lang/ scripts/ styles/ module.json
+      - run: zip -r ./package.zip lang/ scripts/ styles/ module.json
 
       # Create a release for this specific version
       - name: Update Release with Files
@@ -35,6 +35,6 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: "./module.json, ./module.zip"
+          artifacts: "./module.json, ./package.zip"
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
