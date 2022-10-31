@@ -4,7 +4,7 @@
         "whisperMessage": "Nachricht:",
         "whisperToPre":   "Flüstern mit ",
         "whisperToPost":  "",
-        "to":             "An:",
-        "OpenBox":           "Öffne Flüstern"
+        "to":             "An: ",
+        "OpenBox":        "Öffne Flüstern"
     }
 }

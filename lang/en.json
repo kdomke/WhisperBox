@@ -4,7 +4,7 @@
         "whisperMessage": "Message:",
         "whisperToPre":   "Whispering to ",
         "whisperToPost":  "",
-        "to":             "To:",
-        "OpenBox":           "Open whisper box"
+        "to":             "To: ",
+        "OpenBox":        "Open whisper box"
     }
 }
