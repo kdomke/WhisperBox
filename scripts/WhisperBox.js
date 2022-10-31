@@ -137,13 +137,13 @@ class WhisperBox extends Application {
 
             for (let chatMessage of relevantChatHistory) {
                 let speaker = chatMessage.data.speaker.alias ?? chatMessage.user.name;
-                let whisperedTo = game.users.get(chatMessage.whisper[0])?.name ?? game.actors.get(chatMessage.whisper[0])?.name;
+                let whisperedTo = game.i18n.localize('WhisperBox.to') + game.users.get(chatMessage.whisper[0])?.name ?? game.actors.get(chatMessage.whisper[0])?.name;
 
                 let chatMessageItem = $(`<li class="chat-message message flexcol whisper">
     <header class="message-header flexrow">
         <h4 class="message-sender">${speaker}</h4>
         <span class="message-metadata">
-            <span class="whisper-to">`) + game.i18n.localize('WhisperBox.to') + $(`${whisperedTo}</span>
+            <span class="whisper-to">${whisperedTo}</span>
         </span>
     </header>
     <div class="message-content">
