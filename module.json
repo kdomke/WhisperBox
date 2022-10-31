@@ -33,7 +33,27 @@
       "path": "lang/de.json"
     }
   ],
-  "packs": [],
+  "packs": [
+    {
+      "name":   "whisper-en",
+      "label":  "Whisper Macros",
+      "path":   "packs/macros-en.db",
+      "entity": "Macro",
+      "langs": [
+        "en"
+      ]
+    },
+    {
+      "name":   "whisper-de",
+      "label":  "Flüster Macros",
+      "path":   "packs/macros-de.db",
+      "entity": "Macro",
+      "langs": [
+        "de"
+      ]
+    }
+
+  ],
   "system": [],
   "socket": false,
   "manifest": "",

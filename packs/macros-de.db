@@ -1,0 +1,10 @@
+{
+    "name":"Jemanden anflüstern",
+    "type":"script",
+    "scope":"global",
+    "author":"2SuzKdhQYGGtGNNl",
+    "img":"icons/svg/deaf.svg",
+    "command":"var users = game.users.contents;\nvar selectOptions = \"\"\nusers.forEach(user => selectOptions += `<opt    ion value = \"${user.id}\">${user.name}</option>\\n`);\n\nvar dp = {\n    title: \"WhisperBox erstellen\",\n    content: `Benutzer auswählen:<select id=\"users\" name=\"users\">${selectOptions}</select>`,\n    //default:\"whisper\",\n        buttons: {\n        whisper: {\n            label: \"Flüstern\",\n            callback: () => {\n                let uid = document.getElementById(\"users\").value;\n                let user = game.users.find(user => user.id ===     uid);\n\n                let name = user.name;\n                if (game.settings.get('WhisperBox', 'showCharacterName')) {\n                    name = user?.character?.name ?? name;\n                }\n\n                WhisperB    ox.createWhisperBox({name: name, targetUser: uid});\n            }\n        }\n    }\n}\nlet d = new Dialog(dp);\nd.render(true);",
+    "flags":{"core":{"sourceId":"Macro.xHaVLlAV7fCnCr29"}},
+    "folder":null
+    }
