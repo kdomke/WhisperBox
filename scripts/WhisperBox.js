@@ -27,7 +27,7 @@ class WhisperBox extends Application {
             padding: '0'
         });
 
-        historyContainer.append('<h2>History:</h2>');
+        historyContainer.append("<h2>{{localize 'WhisperBox.whisperHistory}}</h2>");
         historyContainer.append(whisperHistory);
 
         let messageContainer = $('<div></div>');
@@ -46,7 +46,7 @@ class WhisperBox extends Application {
             "font-family": "Arial",
         });
 
-        messageContainer.append('<h2>Message:</h2>');
+        messageContainer.append("<h2>{{localize 'WhisperBox.whisperMessage'}}</h2>");
         messageContainer.append(whisperMessage);
 
         let appBody = $('<div></div>');
@@ -76,7 +76,7 @@ class WhisperBox extends Application {
 
         if (!whisperbox) {
             let opt = Dialog.defaultOptions;
-            opt.title = `Whispering to ${name}`;
+            opt.title = game.i18n.localize("WhisperBox.whisperToPre") + name + game.i18n.localize("WhisperBox.whisperToPost");
             opt.width = 400;
             opt.height = 450;
             opt.minimizable = true;
@@ -143,7 +143,7 @@ class WhisperBox extends Application {
     <header class="message-header flexrow">
         <h4 class="message-sender">${speaker}</h4>
         <span class="message-metadata">
-            <span class="whisper-to">To: ${whisperedTo}</span>
+            <span class="whisper-to">{{localize "WhisperBox.to"}} ${whisperedTo}</span>
         </span>
     </header>
     <div class="message-content">
@@ -240,7 +240,7 @@ Hooks.on('ready', function () {
 
 Hooks.on('getUserContextOptions', function (html, contextOptions) {
     contextOptions.push({
-        name: 'Open whisper box',
+        name: game.i18n.localize("WhisperBox.OpenBox"),
         icon: '<i class="fas fa-comments"></i>',
         condition: () => true,
         callback: (li) => {

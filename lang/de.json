@@ -1,0 +1,10 @@
+{
+    "WhisperBox": {
+        "whisperHistory": "Verlauf:",
+        "whisperMessage": "Nachricht:",
+        "whisperToPre":   "Flüstern mit",
+        "whisperToPost":  "",
+        "to":             "An:",
+        "open":           "Öffne Flüstern"
+    }
+}
