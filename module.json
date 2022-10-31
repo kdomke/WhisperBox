@@ -38,7 +38,7 @@
       "name":   "whisper-en",
       "label":  "Whisper Macros",
       "path":   "packs/macros-en.db",
-      "entity": "Macro",
+      "type": "Macro",
       "langs": [
         "en"
       ]
@@ -47,14 +47,14 @@
       "name":   "whisper-de",
       "label":  "Flüster Macros",
       "path":   "packs/macros-de.db",
-      "entity": "Macro",
+      "type": "Macro",
       "langs": [
         "de"
       ]
     }
 
   ],
-  "system": [],
+  "relationships.systems": [],
   "socket": false,
   "manifest": "",
   "download": "",
