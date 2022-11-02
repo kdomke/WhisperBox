@@ -10,11 +10,11 @@
   ],
   "flags": {},
   "version": "",
-  "minimumCoreVersion": "10.270",
-  "compatibleCoreVersion": "10.288",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
   "compatibility": {
-    "minimum":"10.270",
-    "verified":"10.288"
+    "minimum":"10",
+    "verified":"10"
   },
   "scripts": [
     "./scripts/WhisperBox.js"
@@ -35,24 +35,15 @@
   ],
   "packs": [
     {
-      "name":   "whisper-en",
+      "name":   "whisper",
       "label":  "Whisper Macros",
       "path":   "packs/macros-en.db",
       "type": "Macro",
       "langs": [
-        "en"
-      ]
-    },
-    {
-      "name":   "whisper-de",
-      "label":  "Flüster Macros",
-      "path":   "packs/macros-de.db",
-      "type": "Macro",
-      "langs": [
+        "en",
         "de"
       ]
     }
-
   ],
   "relationships.systems": [],
   "socket": false,

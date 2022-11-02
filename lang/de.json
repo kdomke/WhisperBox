@@ -5,6 +5,17 @@
         "whisperToPre":   "Flüstern mit ",
         "whisperToPost":  "",
         "to":             "An: ",
-        "OpenBox":        "Öffne Flüstern"
+        "OpenBox":        "Öffne Flüstern",
+        "settings": {
+            "openBoxOnAllWhispers": {
+                "name": "Beim Flüstern immer öffnen",
+                "hint": "Öffnet eine WhisperBox bei jedem ein- oder ausgehenden Flüstern, nicht nur bei Verwendung des Makros"
+            },
+            "showCharacterName":  {
+                "name": "Charakternamen anzeigen",
+                "hint": "Verwendet den Namen des Hauptcharakternamens, wenn verfügbar."
+            }
+        }
+
     }
 }
