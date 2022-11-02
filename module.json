@@ -37,7 +37,7 @@
     {
       "name":   "whisper",
       "label":  "Whisper Macros",
-      "path":   "packs/macros-en.db",
+      "path":   "packs/macros.db",
       "type": "Macro",
       "langs": [
         "en",
