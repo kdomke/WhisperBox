@@ -197,8 +197,8 @@ Hooks.on('renderTokenHUD', function (hudButtons, html, data) {
 
 Hooks.on('init', function () {
     game.settings.register('WhisperBox', 'openBoxOnAllWhispers', {
-        name: game.l18n.localize("WhisperBox.settings.openBoxOnAllWhispers.name"),
-        hint: game.l18n.localize("WhisperBox.settings.openBoxOnAllWhispers.hint"),
+        name: "WhisperBox.settings.openBoxOnAllWhispers.name",
+        hint: "WhisperBox.settings.openBoxOnAllWhispers.hint",
         scope: 'client',
         config: true,
         default: false,
@@ -206,8 +206,8 @@ Hooks.on('init', function () {
     });
 
     game.settings.register('WhisperBox', 'showCharacterName', {
-        name: game.l18n.localize("WhisperBox.settings.showCharacterName.name"),
-        hint: game.l18n.localize("WhisperBox.settings.showCharacterName.hint"),
+        name: "WhisperBox.settings.showCharacterName.name",
+        hint: "WhisperBox.settings.showCharacterName.hint",
         scope: 'client',
         config: true,
         default: true,
